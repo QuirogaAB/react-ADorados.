@@ -1,9 +1,10 @@
 import './ItemDetailContainer.css'
-import { useState, useEffect } from '../asyncMock.js'
-import { getProductById } from '../ItemDetail'
+import { useState, useEffect } from 'react'
+import { getProductById } from '../../asyncMock'
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState (null)
+    const [product, setProduct] = useState(null)
 
     useEffect(() => {
         getProductById('1')
