@@ -1,3 +1,6 @@
+import './CardWidget.css'
+
+
 import cart from './assets/cart-icon.png'
 
 const CartWidget = () => {
